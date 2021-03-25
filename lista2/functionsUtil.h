@@ -8,6 +8,11 @@ struct POINT {
     double x, y;
 };
 
+struct ITEM {
+    int value, weight;
+    ITEM(int value, int weight): value(value), weight(weight){}
+};
+
 void printVector(vector<int> v) {
     for (const int& x : v) {
         cout << x << " ";
