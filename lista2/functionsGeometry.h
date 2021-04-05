@@ -81,13 +81,11 @@ vector<POINT> convexHullPoints(vector<POINT> espaco, int n) {
     p0 = espaco[0];
     qsort(&espaco[1], n - 1, sizeof(POINT), compare);
  
-    // Create an empty stack and push first three points to it.
     stack<POINT> S;
     S.push(espaco[0]);
     S.push(espaco[1]);
     S.push(espaco[2]);
 
-    // Process remaining n-3 points
     for (int i = 3; i < n; i++) {
         while (orientation(nextToTop(S), S.top(), espaco[i]) != 2){
             S.pop();

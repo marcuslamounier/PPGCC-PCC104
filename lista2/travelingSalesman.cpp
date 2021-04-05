@@ -7,10 +7,10 @@ using namespace std;
 
 int main() {
     vector<vector<int>> cities = {
-        { 0, 20, 42, 35 },
-        { 20, 0, 30, 34 },
-        { 42, 30, 0, 12 },
-        { 35, 34, 12, 0 }
+        { 0, 11, 22, 33 },
+        { 11, 0, 16, 28 },
+        { 22, 16, 0, 39 },
+        { 33, 28, 39, 0 }
     };
 
     vector<vector<int>> state(cities.size());

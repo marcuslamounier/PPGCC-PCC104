@@ -13,7 +13,8 @@ struct ITEM {
     ITEM(int value, int weight): value(value), weight(weight){}
 };
 
-void printVector(vector<int> v) {
+template <typename T>
+void printVector(T v) {
     for (const int& x : v) {
         cout << x << " ";
     }
