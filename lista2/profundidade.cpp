@@ -1,4 +1,8 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <list>
+#include <algorithm>
+#include <stack>
+#include <map>
 
 using namespace std;
 

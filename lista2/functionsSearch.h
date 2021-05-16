@@ -1,22 +1,8 @@
 #include <iostream>
 #include <vector>
+#include <string>
 
 using namespace std;
-
-int sequentialSearch2(vector<int> v, int k) {
-    int n = v.size();
-    v[n] = k;
-    int i = 0;
-    while (v[i] != k) {
-        i++;
-    }
-    if (i < n) {
-        return i;
-    }
-    else {
-        return -1;
-    }
-}
 
 int bruteForceStringMatch(string s, string key) {
     int n = s.length();
@@ -32,4 +18,13 @@ int bruteForceStringMatch(string s, string key) {
         }
     }
     return -1;
+}
+
+template <typename T1, typename T2>
+int sequentialSearch2(T1 v, T2 K) {
+    int n = v.size();
+    v[n] = K;
+    int i = 0;
+    while (v[i] != K) i++;
+    return (i < n) ? i : -1;
 }

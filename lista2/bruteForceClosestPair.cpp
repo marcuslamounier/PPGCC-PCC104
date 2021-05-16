@@ -15,10 +15,10 @@ int main() {
         printPoint(espaco[i]);
     }
     cout << endl;
-    
-    cout << "Menor distancia entre dois pontos: " << bruteForceClosestPair(espaco);
 
+    cout << "Menor distancia entre dois pontos: " << bruteForceClosestPair(espaco);
     cout << endl;
+
     return 0;
 }
 

@@ -16,9 +16,7 @@ void swap (char* a, char* b) {
 
 int searchArr(int a[], int n, int mobile) {
     for (int i = 0; i < n; i++) {
-        if (a[i] == mobile) {
-            return (i + 1);
-        }
+        if (a[i] == mobile) return (i + 1);
     }
 }
 

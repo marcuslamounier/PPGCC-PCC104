@@ -4,7 +4,7 @@
 #include <math.h>
 #include <stack>
 #include <array>
-#include <bits/stdc++.h>
+#include <algorithm>
 
 #include "functionsUtil.h"
 
@@ -15,15 +15,17 @@ double distPoints(POINT a, POINT b) {
 }
 
 double bruteForceClosestPair(vector<POINT> v) {
-    double d = numeric_limits<double>::infinity();
+    double closest = numeric_limits<double>::infinity();
     int n = v.size() - 1;
     for (int i = 1; i < n; i++) {
         for (int j = (i + 1); j <= n; j++) {
             double dist = distPoints(v[i], v[j]);
-            d = (d < dist) ? d : dist;
+            if (closest > dist) {
+                closest = dist;
+            } 
         }
     }
-    return d;
+    return closest;
 }
  
 POINT p0;
@@ -50,8 +52,8 @@ int orientation(POINT p, POINT q, POINT r){
     int val = (q.y - p.y) * (r.x - q.x) - (q.x - p.x) * (r.y - q.y);
  
     if (val == 0)
-        return 0; // colinear
-    return (val > 0) ? 1 : 2; // clock or counterclock wise
+        return 0;
+    return (val > 0) ? 1 : 2;
 }
  
 int compare(const void *vp1, const void *vp2) {
@@ -142,12 +144,14 @@ int tsp(const vector<vector<int>>& cities, int pos, int visited, vector<vector<i
         return state[pos][visited];
 
     for(int i = 0; i < cities.size(); ++i) {
-        if(i == pos || (visited & (1 << i)))
+        if(i == pos || (visited & (1 << i))) {
             continue;
+        }
 
         int distance = cities[pos][i] + tsp(cities, i, visited | (1 << i), state);
-        if(distance < state[pos][visited])
+        if(distance < state[pos][visited]) {
             state[pos][visited] = distance;
+        }
     }
 
     return state[pos][visited];
