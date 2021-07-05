@@ -1,4 +1,4 @@
-# Lista 2
+# Lista 2 - Algoritmos de **Força Bruta e Busca Exaustiva**
 
 * [Exercício 1](https://github.com/marcuslamounier/PPGCC-PCC104/blob/main/lista2/bubbleSort.cpp) - Algoritmo BubbleSort
 * [Exercício 2](https://github.com/marcuslamounier/PPGCC-PCC104/blob/main/lista2/selectionSort.cpp) - Algoritmo SelectionSort

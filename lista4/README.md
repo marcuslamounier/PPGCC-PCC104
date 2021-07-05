@@ -1,4 +1,4 @@
-# Lista 4
+# Lista 4 - Algoritmos de **Dividir e Conquistar**
 
 * [Exercício 1](https://github.com/marcuslamounier/PPGCC-PCC104/blob/main/lista4/mergeSort.cpp) - Algoritmo MergeSort
 * [Exercício 4](https://github.com/marcuslamounier/PPGCC-PCC104/blob/main/lista4/posMax.cpp) - Algoritmo de divisão e conquista para encontrar a posiçãao do maior elemento de um arranjo de *n* elementos

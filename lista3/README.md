@@ -1,4 +1,4 @@
-# Lista 3
+# Lista 3 - Algoritmos de **Diminuir e Conquistar**
 
 * [Exercício 1](https://github.com/marcuslamounier/PPGCC-PCC104/blob/main/lista3/insertionSort.cpp) - Algoritmo InsertionSort
 * [Exercício 2](https://github.com/marcuslamounier/PPGCC-PCC104/blob/main/lista3/johnsonTrotter.cpp) - Algoritmo Johnson-Trotter para gerar permutações

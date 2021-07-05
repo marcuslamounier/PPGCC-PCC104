@@ -6,14 +6,14 @@ Listas de Exercícios da disciplinas PCC104 - Projeto e Análise de Algoritmos d
 
 Algoritmos de **Força Bruta e Busca Exaustiva**
 
-## [Lista 3](https://github.com/marcuslamounier/PPGCC-PCC104/tree/main/lista2)
+## [Lista 3](https://github.com/marcuslamounier/PPGCC-PCC104/tree/main/lista3)
 
 Algoritmos de **Diminuir e Conquistar**
 
-## [Lista 4](https://github.com/marcuslamounier/PPGCC-PCC104/tree/main/lista2)
+## [Lista 4](https://github.com/marcuslamounier/PPGCC-PCC104/tree/main/lista4)
 
 Algoritmos de **Dividir e Conquistar**
 
-## [Lista 6](https://github.com/marcuslamounier/PPGCC-PCC104/tree/main/lista2)
+## [Lista 6](https://github.com/marcuslamounier/PPGCC-PCC104/tree/main/lista6)
 
 Algoritmos de **Programação Dinâmica, Backtracking e Branch and Bound**
