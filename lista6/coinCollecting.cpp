@@ -15,13 +15,27 @@ template <typename T>
 void initializeBoard (vector<vector<T>> &F, vector<vector<T>> &board) {
     for (vector<T> &l : board) {
         vector<T> f;
-        for (T &c : l) f.push_back(-1);
+        for (T &c : l) f.push_back(0);
         F.push_back(f);
     }
 }
 
 template <typename T>
-int coinCollecting (vector<vector<T>> &board) {
+int coinCollectingUsual (vector<vector<T>> &board, int n, int m) {
+    if (n == 0 && m == 0) return board[n][m];
+    else if (n == 0) {
+        return (coinCollectingUsual(board, n, m - 1) + board[n][m]);
+    }
+    else if (m == 0) {
+        return (coinCollectingUsual(board, n - 1, m) + board[n][m]);
+    }
+    else {
+        return (max(coinCollectingUsual(board, n, m - 1), coinCollectingUsual(board, n - 1, m)) + board[n][m]);
+    }
+}
+
+template <typename T>
+int coinCollectingDP (vector<vector<T>> &board) {
 
     vector<vector<T>> F;    
     initializeBoard(F, board);
@@ -65,7 +79,7 @@ int main() {
 
     printMatrix(board);
 
-    cout << "Maior quantidade de moedas coletadas: " << coinCollecting(board) << endl;
+    cout << "Maior quantidade de moedas coletadas: " << coinCollectingUsual(board, board.size() - 1, board[0].size() - 1) << endl;
 
     return 0;
 }

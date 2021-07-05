@@ -12,13 +12,9 @@
 
 * [Exercício f - Algoritmo para o Coin-collecting Problem sem utilização de programação dinâmica](https://github.com/marcuslamounier/PPGCC-PCC104/blob/main/lista6/coinCollecting.cpp)
 
-<!-- * [Exercício d - Algoritmo para Change-Making Problem](https://github.com/marcuslamounier/PPGCC-PCC104/blob/main/lista6/changeMaking.cpp)
+* [Exercício g - em função de memória para o Knapsack Problem](https://github.com/marcuslamounier/PPGCC-PCC104/blob/main/lista6/backpack.cpp)
 
-* [Exercício d - Algoritmo para Change-Making Problem](https://github.com/marcuslamounier/PPGCC-PCC104/blob/main/lista6/changeMaking.cpp)
-
-* [Exercício d - Algoritmo para Change-Making Problem](https://github.com/marcuslamounier/PPGCC-PCC104/blob/main/lista6/changeMaking.cpp)
-
-* [Exercício d - Algoritmo para Change-Making Problem](https://github.com/marcuslamounier/PPGCC-PCC104/blob/main/lista6/changeMaking.cpp)
+<!--
 
 ## Exercício 2 - Backtracking
 
@@ -34,4 +30,6 @@
 * [Exercício b]() - Algoritmo 
 * [Exercício b]() - Algoritmo 
 * [Exercício b]() - Algoritmo 
-* [Exercício b]() - Algoritmo  -->
+* [Exercício b]() - Algoritmo
+
+-->
