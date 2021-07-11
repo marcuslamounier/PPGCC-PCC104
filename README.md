@@ -1,6 +1,6 @@
 # PPGCC-PCC104
 
-Listas de Exercícios da disciplinas PCC104 - Projeto e Análise de Algoritmos do Programa de Pós-Graduação em Ciência da Computação da Universidade Federal de Ouro Preto.
+Listas de Exercícios da disciplina PCC104 - Projeto e Análise de Algoritmos do Programa de Pós-Graduação em Ciência da Computação da Universidade Federal de Ouro Preto.
 
 ## Lista 2
 
