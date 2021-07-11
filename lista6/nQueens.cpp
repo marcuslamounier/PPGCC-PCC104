@@ -60,7 +60,7 @@ int nQueens (vector<vector<int>> &board, int boardSize, int col, int &nSol) {
         cout << "-------------" << endl;
         return nSol;
     }
-    for(int i = 0; i < boardSize; i++){
+    for (int i = 0; i < boardSize; i++){
         if (checkPosition(board, boardSize, i, col)) {
             board[i][col] = 1;
             nQueens(board, boardSize, col + 1, nSol);
@@ -78,15 +78,14 @@ int main () {
     int boardSize;
     cout << "Digite a medida do tabuleiro: ";
     cin >> boardSize;
+    cout << endl;
 
     vector<vector<int>> board = initializeBoard(boardSize);
     
     int nSol = 0;
     int finalNSol = nQueens(board, boardSize, 0, nSol);
 
-
-
-    cout << "Numero de solucoes para um tabuleiro " << boardSize << "x" << boardSize << ": " << finalNSol;
+    cout << "\nNumero de solucoes para um tabuleiro " << boardSize << "x" << boardSize << ": " << finalNSol;
 
     return 0;
 }
